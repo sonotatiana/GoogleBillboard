@@ -8,8 +8,15 @@ public void setup()
 
 }  
 public void draw()  
-{   
-	//not needed for this assignment
+{  
+
+		for(int i = 2; i< e.length() -10; i++)
+		{
+			if(isPrime(Double.parseDouble(e.substring(i,i+10))) == true)
+			{
+				System.out.println(e.substring(i,i+10));
+			}
+		}
 }  
 public boolean isPrime(double dNum)  
 {   
@@ -22,9 +29,7 @@ public boolean isPrime(double dNum)
     	if(dNum % i == 0)
     	{
     		return false;
-    		System.out.println("false");
     	}
     }
-    return true;
-    System.out.println("true");  
+    return true; 
 } 
